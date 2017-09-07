@@ -1,0 +1,190 @@
+03 五月 2017 10:17:20,087  DEBUG - ? ? Forwarding to resource [/pages/login.jsp] in InternalResourceView 'login'
+03 五月 2017 10:17:31,449  DEBUG - ? ? ==>  Preparing: select operator_id,operator_code,operator_name,password,city_id,operator_type,applicable_scope,display_name, PASSWORD_EXPIRES_DATE,EXPIRATION_DATE,SYS_FLAG,area_id,phone_num,physical_area_id from tp_operator t where t.state=12 and (lower(operator_code)=? or phone_num=? or lower(mail)=?) 
+03 五月 2017 10:17:31,530  DEBUG - ? ? ==> Parameters: admin(String), admin(String), admin(String)
+03 五月 2017 10:17:31,566  DEBUG - ? ? <==      Total: 1
+03 五月 2017 10:17:31,572  DEBUG - ? ? ==>  Preparing: select count(role_id) from web_operator_role_rel where operator_id=? and role_id=0 
+03 五月 2017 10:17:31,572  DEBUG - ? ? ==> Parameters: 100001(String)
+03 五月 2017 10:17:31,576  DEBUG - ? ? <==      Total: 1
+03 五月 2017 10:17:31,576  DEBUG - ? ? ==>  Preparing: select count(role_id) from web_operator_role_rel where operator_id=? and role_id=10001 
+03 五月 2017 10:17:31,577  DEBUG - ? ? ==> Parameters: 100001(String)
+03 五月 2017 10:17:31,580  DEBUG - ? ? <==      Total: 1
+03 五月 2017 10:17:31,580  DEBUG - ? ? ==>  Preparing: select max(to_char(login_date,'yyyy-mm-dd hh24:mi:ss')) from tp_login_log where operator_id =? 
+03 五月 2017 10:17:31,580  DEBUG - ? ? ==> Parameters: 100001(String)
+03 五月 2017 10:17:31,585  DEBUG - ? ? <==      Total: 1
+03 五月 2017 10:17:31,586  DEBUG - ? ? ==>  Preparing: select count(1) from web_sys_role a,web_operator_role_rel b where a.state=12 and a.role_id=b.role_id and b.operator_id=? and a.role_type=3 
+03 五月 2017 10:17:31,586  DEBUG - ? ? ==> Parameters: 100001(String)
+03 五月 2017 10:17:31,590  DEBUG - ? ? <==      Total: 1
+03 五月 2017 10:17:31,591  DEBUG - ? ? ==>  Preparing: select count(distinct a.role_type ) from web_sys_role a,web_operator_role_rel b where a.state=12 and a.role_id=b.role_id and b.operator_id=? 
+03 五月 2017 10:17:31,591  DEBUG - ? ? ==> Parameters: 100001(String)
+03 五月 2017 10:17:31,595  DEBUG - ? ? <==      Total: 1
+03 五月 2017 10:17:31,619  DEBUG - ? ? ==>  Preparing: insert into tp_login_log (log_id,operator_id,login_address,login_hostname,login_date) values (SEQ_LOGIN_LOG_ID.nextval,?,?,?,sysdate) 
+03 五月 2017 10:17:31,622  DEBUG - ? ? ==> Parameters: 100001(String), 0:0:0:0:0:0:0:1%0(String), localhost(String)
+03 五月 2017 10:17:31,643  DEBUG - ? ? <==    Updates: 1
+03 五月 2017 10:17:31,702  DEBUG - ? ? ==>  Preparing: insert into tg_action_log( log_id ,operator_id ,city_id ,act_code ,act_params ,act_date ) values ( seq_action_log_id.nextval ,? ,? ,? ,? ,sysdate ) 
+03 五月 2017 10:17:31,703  DEBUG - ? ? ==> Parameters: 100001(String), 0(String), /forwardMain.do(String), (String)
+03 五月 2017 10:17:31,750  DEBUG - ? ? <==    Updates: 1
+03 五月 2017 10:17:31,751  DEBUG - ? ? ==>  Preparing: with menuSql as( select distinct * from web_sys_menu start with menu_code in(select distinct b.menu_code from web_operator_role_rel a, web_role_menu_rel b,web_sys_role d where a.role_id = b.role_id and a.role_id=d.role_id and d.state=12 and a.operator_id = ?) connect by nocycle prior parent_menu = menu_code ) select distinct c.menu_code, c.menu_name, c.iconcls, c.url,c.weight, (select count(1) from menuSql t where t.parent_menu=c.menu_code and t.type=1) sub_num from menuSql b,web_sys_menu c where b.menu_code = c.menu_code and c.inuse = 0 and c.type = 1 and c.parent_menu is null order by c.weight 
+03 五月 2017 10:17:31,752  DEBUG - ? ? ==> Parameters: 100001(String)
+03 五月 2017 10:17:31,857  DEBUG - ? ? <==      Total: 13
+03 五月 2017 10:17:31,860  DEBUG - ? ? ==>  Preparing: with menuSql as( select distinct * from web_sys_menu start with menu_code in(select distinct b.menu_code from web_operator_role_rel a, web_role_menu_rel b,web_sys_role d where a.role_id = b.role_id and a.role_id=d.role_id and d.state=12 and a.operator_id = ?) connect by nocycle prior parent_menu = menu_code ) select menu_code, menu_name, iconcls, url,weight,sub_num from ( select distinct c.parent_menu,c.menu_code, c.menu_name, c.iconcls, c.url,c.weight,c.inuse,c.type, (select count(1) from menuSql t where t.parent_menu=c.menu_code and t.type=1) sub_num from web_sys_menu c start with menu_code in (select distinct b.menu_code from menuSql b) connect by nocycle prior parent_menu=menu_code ) where parent_menu=? and inuse = 0 and type = 1 order by weight 
+03 五月 2017 10:17:31,861  DEBUG - ? ? ==> Parameters: 100001(String), m_check(String)
+03 五月 2017 10:17:31,880  DEBUG - ? ? <==      Total: 3
+03 五月 2017 10:17:31,881  DEBUG - ? ? ==>  Preparing: with menuSql as( select distinct * from web_sys_menu start with menu_code in(select distinct b.menu_code from web_operator_role_rel a, web_role_menu_rel b,web_sys_role d where a.role_id = b.role_id and a.role_id=d.role_id and d.state=12 and a.operator_id = ?) connect by nocycle prior parent_menu = menu_code ) select menu_code, menu_name, iconcls, url,weight,sub_num from ( select distinct c.parent_menu,c.menu_code, c.menu_name, c.iconcls, c.url,c.weight,c.inuse,c.type, (select count(1) from menuSql t where t.parent_menu=c.menu_code and t.type=1) sub_num from web_sys_menu c start with menu_code in (select distinct b.menu_code from menuSql b) connect by nocycle prior parent_menu=menu_code ) where parent_menu=? and inuse = 0 and type = 1 order by weight 
+03 五月 2017 10:17:31,881  DEBUG - ? ? ==> Parameters: 100001(String), m_yjQueryManage(String)
+03 五月 2017 10:17:31,895  DEBUG - ? ? <==      Total: 2
+03 五月 2017 10:17:31,896  DEBUG - ? ? ==>  Preparing: with menuSql as( select distinct * from web_sys_menu start with menu_code in(select distinct b.menu_code from web_operator_role_rel a, web_role_menu_rel b,web_sys_role d where a.role_id = b.role_id and a.role_id=d.role_id and d.state=12 and a.operator_id = ?) connect by nocycle prior parent_menu = menu_code ) select menu_code, menu_name, iconcls, url,weight,sub_num from ( select distinct c.parent_menu,c.menu_code, c.menu_name, c.iconcls, c.url,c.weight,c.inuse,c.type, (select count(1) from menuSql t where t.parent_menu=c.menu_code and t.type=1) sub_num from web_sys_menu c start with menu_code in (select distinct b.menu_code from menuSql b) connect by nocycle prior parent_menu=menu_code ) where parent_menu=? and inuse = 0 and type = 1 order by weight 
+03 五月 2017 10:17:31,896  DEBUG - ? ? ==> Parameters: 100001(String), m_zcQueryManage(String)
+03 五月 2017 10:17:31,913  DEBUG - ? ? <==      Total: 2
+03 五月 2017 10:17:31,914  DEBUG - ? ? ==>  Preparing: with menuSql as( select distinct * from web_sys_menu start with menu_code in(select distinct b.menu_code from web_operator_role_rel a, web_role_menu_rel b,web_sys_role d where a.role_id = b.role_id and a.role_id=d.role_id and d.state=12 and a.operator_id = ?) connect by nocycle prior parent_menu = menu_code ) select menu_code, menu_name, iconcls, url,weight,sub_num from ( select distinct c.parent_menu,c.menu_code, c.menu_name, c.iconcls, c.url,c.weight,c.inuse,c.type, (select count(1) from menuSql t where t.parent_menu=c.menu_code and t.type=1) sub_num from web_sys_menu c start with menu_code in (select distinct b.menu_code from menuSql b) connect by nocycle prior parent_menu=menu_code ) where parent_menu=? and inuse = 0 and type = 1 order by weight 
+03 五月 2017 10:17:31,914  DEBUG - ? ? ==> Parameters: 100001(String), m_issueInvoiceManage(String)
+03 五月 2017 10:17:31,938  DEBUG - ? ? <==      Total: 2
+03 五月 2017 10:17:31,939  DEBUG - ? ? ==>  Preparing: with menuSql as( select distinct * from web_sys_menu start with menu_code in(select distinct b.menu_code from web_operator_role_rel a, web_role_menu_rel b,web_sys_role d where a.role_id = b.role_id and a.role_id=d.role_id and d.state=12 and a.operator_id = ?) connect by nocycle prior parent_menu = menu_code ) select menu_code, menu_name, iconcls, url,weight,sub_num from ( select distinct c.parent_menu,c.menu_code, c.menu_name, c.iconcls, c.url,c.weight,c.inuse,c.type, (select count(1) from menuSql t where t.parent_menu=c.menu_code and t.type=1) sub_num from web_sys_menu c start with menu_code in (select distinct b.menu_code from menuSql b) connect by nocycle prior parent_menu=menu_code ) where parent_menu=? and inuse = 0 and type = 1 order by weight 
+03 五月 2017 10:17:31,940  DEBUG - ? ? ==> Parameters: 100001(String), m_sysManage(String)
+03 五月 2017 10:17:31,955  DEBUG - ? ? <==      Total: 3
+03 五月 2017 10:17:31,956  DEBUG - ? ? ==>  Preparing: with menuSql as( select distinct * from web_sys_menu start with menu_code in(select distinct b.menu_code from web_operator_role_rel a, web_role_menu_rel b,web_sys_role d where a.role_id = b.role_id and a.role_id=d.role_id and d.state=12 and a.operator_id = ?) connect by nocycle prior parent_menu = menu_code ) select menu_code, menu_name, iconcls, url,weight,sub_num from ( select distinct c.parent_menu,c.menu_code, c.menu_name, c.iconcls, c.url,c.weight,c.inuse,c.type, (select count(1) from menuSql t where t.parent_menu=c.menu_code and t.type=1) sub_num from web_sys_menu c start with menu_code in (select distinct b.menu_code from menuSql b) connect by nocycle prior parent_menu=menu_code ) where parent_menu=? and inuse = 0 and type = 1 order by weight 
+03 五月 2017 10:17:31,956  DEBUG - ? ? ==> Parameters: 100001(String), m_staffManage(String)
+03 五月 2017 10:17:31,980  DEBUG - ? ? <==      Total: 3
+03 五月 2017 10:17:31,981  DEBUG - ? ? ==>  Preparing: with menuSql as( select distinct * from web_sys_menu start with menu_code in(select distinct b.menu_code from web_operator_role_rel a, web_role_menu_rel b,web_sys_role d where a.role_id = b.role_id and a.role_id=d.role_id and d.state=12 and a.operator_id = ?) connect by nocycle prior parent_menu = menu_code ) select menu_code, menu_name, iconcls, url,weight,sub_num from ( select distinct c.parent_menu,c.menu_code, c.menu_name, c.iconcls, c.url,c.weight,c.inuse,c.type, (select count(1) from menuSql t where t.parent_menu=c.menu_code and t.type=1) sub_num from web_sys_menu c start with menu_code in (select distinct b.menu_code from menuSql b) connect by nocycle prior parent_menu=menu_code ) where parent_menu=? and inuse = 0 and type = 1 order by weight 
+03 五月 2017 10:17:31,982  DEBUG - ? ? ==> Parameters: 100001(String), m_paymentManage(String)
+03 五月 2017 10:17:32,005  DEBUG - ? ? <==      Total: 2
+03 五月 2017 10:17:32,006  DEBUG - ? ? ==>  Preparing: with menuSql as( select distinct * from web_sys_menu start with menu_code in(select distinct b.menu_code from web_operator_role_rel a, web_role_menu_rel b,web_sys_role d where a.role_id = b.role_id and a.role_id=d.role_id and d.state=12 and a.operator_id = ?) connect by nocycle prior parent_menu = menu_code ) select menu_code, menu_name, iconcls, url,weight,sub_num from ( select distinct c.parent_menu,c.menu_code, c.menu_name, c.iconcls, c.url,c.weight,c.inuse,c.type, (select count(1) from menuSql t where t.parent_menu=c.menu_code and t.type=1) sub_num from web_sys_menu c start with menu_code in (select distinct b.menu_code from menuSql b) connect by nocycle prior parent_menu=menu_code ) where parent_menu=? and inuse = 0 and type = 1 order by weight 
+03 五月 2017 10:17:32,006  DEBUG - ? ? ==> Parameters: 100001(String), m_trmnlBrand(String)
+03 五月 2017 10:17:32,029  DEBUG - ? ? <==      Total: 1
+03 五月 2017 10:17:32,031  DEBUG - ? ? Added model object 'staffName' of type [java.lang.String] to request in view with name 'main'
+03 五月 2017 10:17:32,031  DEBUG - ? ? Added model object 'menus' of type [java.util.ArrayList] to request in view with name 'main'
+03 五月 2017 10:17:32,031  DEBUG - ? ? Forwarding to resource [/pages/main.jsp] in InternalResourceView 'main'
+03 五月 2017 10:17:32,605  DEBUG - ? ? ==>  Preparing: insert into tg_action_log( log_id ,operator_id ,city_id ,act_code ,act_params ,act_date ) values ( seq_action_log_id.nextval ,? ,? ,? ,? ,sysdate ) 
+03 五月 2017 10:17:32,606  DEBUG - ? ? ==> Parameters: 100001(String), 0(String), /initCheckedShortcutMenu.do(String), (String)
+03 五月 2017 10:17:32,608  DEBUG - ? ? ==>  Preparing: insert into tg_action_log( log_id ,operator_id ,city_id ,act_code ,act_params ,act_date ) values ( seq_action_log_id.nextval ,? ,? ,? ,? ,sysdate ) 
+03 五月 2017 10:17:32,608  DEBUG - ? ? ==> Parameters: 100001(String), 0(String), /forwardMenu.do(String), menu=index;menu=index;(String)
+03 五月 2017 10:17:32,626  DEBUG - ? ? <==    Updates: 1
+03 五月 2017 10:17:32,628  DEBUG - ? ? ==>  Preparing: select distinct b.menu_code,b.menu_name,b.iconcls,b.url,a.weight from web_shortcut_menu a,web_sys_menu b where a.menu_code=b.menu_code and a.operator_id=? order by a.weight 
+03 五月 2017 10:17:32,629  DEBUG - ? ? ==> Parameters: 100001(String)
+03 五月 2017 10:17:32,638  DEBUG - ? ? <==      Total: 5
+03 五月 2017 10:17:32,676  DEBUG - ? ? <==    Updates: 1
+03 五月 2017 10:17:32,679  DEBUG - ? ? ==>  Preparing: select c.menu_code as button_code from web_role_menu_rel a, web_operator_role_rel b, web_sys_menu c,web_sys_role e where c.menu_code = a.menu_code and a.role_id = b.role_id and b.role_id=e.role_id and e.state=12 and b.operator_id = ? and c.type = 2 
+03 五月 2017 10:17:32,679  DEBUG - ? ? ==> Parameters: 100001(String)
+03 五月 2017 10:17:32,696  DEBUG - ? ? <==      Total: 30
+03 五月 2017 10:17:32,696  DEBUG - ? ? Added model object 'staffName' of type [java.lang.String] to request in view with name 'index'
+03 五月 2017 10:17:32,696  DEBUG - ? ? Added model object 'menu' of type [[Ljava.lang.String;] to request in view with name 'index'
+03 五月 2017 10:17:32,696  DEBUG - ? ? Added model object 'btnPrivileges' of type [java.util.ArrayList] to request in view with name 'index'
+03 五月 2017 10:17:32,696  DEBUG - ? ? Forwarding to resource [/pages/index.jsp] in InternalResourceView 'index'
+03 五月 2017 10:17:32,873  DEBUG - ? ? ==>  Preparing: insert into tg_action_log( log_id ,operator_id ,city_id ,act_code ,act_params ,act_date ) values ( seq_action_log_id.nextval ,? ,? ,? ,? ,sysdate ) 
+03 五月 2017 10:17:32,878  DEBUG - ? ? ==> Parameters: 100001(String), 0(String), /koala/koala.min.1.5.js(String), (String)
+03 五月 2017 10:17:32,893  DEBUG - ? ? <==    Updates: 1
+03 五月 2017 10:17:32,894  DEBUG - ? ? Forwarding to resource [/pages/login.jsp] in InternalResourceView 'login'
+03 五月 2017 10:17:32,914  DEBUG - ? ? ==>  Preparing: insert into tg_action_log( log_id ,operator_id ,city_id ,act_code ,act_params ,act_date ) values ( seq_action_log_id.nextval ,? ,? ,? ,? ,sysdate ) 
+03 五月 2017 10:17:32,915  DEBUG - ? ? ==> Parameters: 100001(String), 0(String), /koala/terminator2.2.min.js(String), (String)
+03 五月 2017 10:17:32,932  DEBUG - ? ? ==>  Preparing: insert into tg_action_log( log_id ,operator_id ,city_id ,act_code ,act_params ,act_date ) values ( seq_action_log_id.nextval ,? ,? ,? ,? ,sysdate ) 
+03 五月 2017 10:17:32,932  DEBUG - ? ? ==> Parameters: 100001(String), 0(String), /getLatestNotice.do(String), listSize=5;(String)
+03 五月 2017 10:17:32,934  DEBUG - ? ? <==    Updates: 1
+03 五月 2017 10:17:32,935  DEBUG - ? ? Forwarding to resource [/pages/login.jsp] in InternalResourceView 'login'
+03 五月 2017 10:17:32,940  DEBUG - ? ? ==>  Preparing: insert into tg_action_log( log_id ,operator_id ,city_id ,act_code ,act_params ,act_date ) values ( seq_action_log_id.nextval ,? ,? ,? ,? ,sysdate ) 
+03 五月 2017 10:17:32,940  DEBUG - ? ? ==> Parameters: 100001(String), 0(String), /offerSpec/getTopOfferSpec.do(String), (String)
+03 五月 2017 10:17:32,974  DEBUG - ? ? <==    Updates: 1
+03 五月 2017 10:17:32,975  DEBUG - ? ? ==>  Preparing: insert into tg_action_log( log_id ,operator_id ,city_id ,act_code ,act_params ,act_date ) values ( seq_action_log_id.nextval ,? ,? ,? ,? ,sysdate ) 
+03 五月 2017 10:17:32,980  DEBUG - ? ? ==> Parameters: 100001(String), 0(String), /backlog/getBacklogNums.do(String), (String)
+03 五月 2017 10:17:32,985  DEBUG - ? ? <==    Updates: 1
+03 五月 2017 10:17:32,990  DEBUG - ? ? ==>  Preparing: insert into tg_action_log( log_id ,operator_id ,city_id ,act_code ,act_params ,act_date ) values ( seq_action_log_id.nextval ,? ,? ,? ,? ,sysdate ) 
+03 五月 2017 10:17:32,990  DEBUG - ? ? ==> Parameters: 100001(String), 0(String), /policy/policyQuery/getPolicyListByOrder.do(String), pageSize=6;pageIndex=0;(String)
+03 五月 2017 10:17:32,993  DEBUG - ? ? <==    Updates: 1
+03 五月 2017 10:17:32,994  DEBUG - ? ? ==>  Preparing: insert into tg_action_log( log_id ,operator_id ,city_id ,act_code ,act_params ,act_date ) values ( seq_action_log_id.nextval ,? ,? ,? ,? ,sysdate ) 
+03 五月 2017 10:17:32,995  DEBUG - ? ? ==> Parameters: 100001(String), 0(String), /policy/policyQuery/initQuestionNum.do(String), (String)
+03 五月 2017 10:17:33,009  DEBUG - ? ? <==    Updates: 1
+03 五月 2017 10:17:33,010  DEBUG - ? ? <==    Updates: 1
+03 五月 2017 10:17:33,020  DEBUG - ? ?  pageSql: select * from (select t_page.*, rownum r from (with
+	     
+	     sql0 as
+		 (select area_id
+		    from tp_area
+		   start with area_id in (320000)
+		  connect by prior area_id = parent_id
+		  union all
+		  select area_id
+		    from tp_area
+		   start with area_id in (320000)
+		connect by area_id = prior parent_id),
+	     
+		 
+	    sql2 as
+		 (select distinct s.policy_cd,
+		                  s.policy_nm,
+		                  to_char(s.begin_dt, 'yyyy-mm-dd') begin_dt,
+		                  to_char(s.end_dt, 'yyyy-mm-dd') end_dt,
+		                  s.state,
+		                  s.policy_flag
+		    from tp_policy_def s 
+		     
+		   where 1=1  
+		    
+		    
+		   and s.area_id in (select area_id from sql0)
+		    
+		   and   s.state=12),
+		  sql3 as
+		 (select i.policy_cd,
+		         i.policy_nm,
+		         i.begin_dt,
+		         i.end_dt,
+		         i.state,
+		         get_check_sys_col_name('tp_policy_def', 'state', i.state) as state_name,
+		         i.policy_flag,
+		         nvl(n.order_dt, to_date('20000101', 'yyyymmdd')) order_dt,
+		         n.busi_kind,
+		         case
+		           when n.order_dt > add_months(sysdate, -3) then
+		            1
+		           else
+		            2
+		         end new_flag,
+		         m.hot_flag
+		    from tp_policy_busi_order n,
+		         sql2 i,
+		         (select *
+		            from tp_policy_hot_statis
+		           where sett_month = to_char(add_months(sysdate, -1), 'yyyymm')
+		            
+		             and stat_type = 100) m
+		   where i.policy_cd = m.policy_cd(+)
+		     and i.policy_cd = n.order_id(+))
+		select a.policy_cd,
+               a.policy_nm,
+               a.begin_dt,
+               a.end_dt,
+               a.state,
+               a.state_name,
+               a.policy_flag,
+               a.order_dt,
+               a.busi_kind,
+               a.new_flag,
+               a.hot_flag,
+               b.yjbz
+          from sql3 a, 
+               (select * from tp_policy_yjbz
+                where state=12) b
+         where a.policy_cd = b.policy_cd(+)
+         order by a.hot_flag,
+                  a.new_flag,
+                  a.state,
+                  a.policy_flag desc,
+                  a.busi_kind,
+                  a.order_dt    desc,
+                  a.policy_nm) t_page where rownum <= 6) where r >= 1
+03 五月 2017 10:17:33,020  DEBUG - ? ? ==>  Preparing: select * from (select t_page.*, rownum r from (with sql0 as (select area_id from tp_area start with area_id in (320000) connect by prior area_id = parent_id union all select area_id from tp_area start with area_id in (320000) connect by area_id = prior parent_id), sql2 as (select distinct s.policy_cd, s.policy_nm, to_char(s.begin_dt, 'yyyy-mm-dd') begin_dt, to_char(s.end_dt, 'yyyy-mm-dd') end_dt, s.state, s.policy_flag from tp_policy_def s where 1=1 and s.area_id in (select area_id from sql0) and s.state=12), sql3 as (select i.policy_cd, i.policy_nm, i.begin_dt, i.end_dt, i.state, get_check_sys_col_name('tp_policy_def', 'state', i.state) as state_name, i.policy_flag, nvl(n.order_dt, to_date('20000101', 'yyyymmdd')) order_dt, n.busi_kind, case when n.order_dt > add_months(sysdate, -3) then 1 else 2 end new_flag, m.hot_flag from tp_policy_busi_order n, sql2 i, (select * from tp_policy_hot_statis where sett_month = to_char(add_months(sysdate, -1), 'yyyymm') and stat_type = 100) m where i.policy_cd = m.policy_cd(+) and i.policy_cd = n.order_id(+)) select a.policy_cd, a.policy_nm, a.begin_dt, a.end_dt, a.state, a.state_name, a.policy_flag, a.order_dt, a.busi_kind, a.new_flag, a.hot_flag, b.yjbz from sql3 a, (select * from tp_policy_yjbz where state=12) b where a.policy_cd = b.policy_cd(+) order by a.hot_flag, a.new_flag, a.state, a.policy_flag desc, a.busi_kind, a.order_dt desc, a.policy_nm) t_page where rownum <= 6) where r >= 1 
+03 五月 2017 10:17:33,020  DEBUG - ? ? ==> Parameters: 
+03 五月 2017 10:17:33,029  DEBUG - ? ? ==>  Preparing: select count(1) total_num,sum(case when state=10 then 1 else 0 end) undo_num from web_backlog_list a ,web_backlog_director_rel b where a.backlog_id=b.backlog_id and b.director_id=? 
+03 五月 2017 10:17:33,030  DEBUG - ? ? ==>  Preparing: with sql1 as (select * from (select distinct t.offer_spec_id,t.sett_num from tp_policy_hot_statis t where t.stat_type = 101 and t.city_id =? and t.sett_month = to_char(add_months(sysdate, -1), 'yyyymm') order by t.sett_num desc) where rownum<7) select distinct a.offer_spec_id,a.sett_num,b.name offer_spec_nm from sql1 a inner join tp_bss_offer_spec b on a.offer_spec_id = b.offer_spec_id order by a.sett_num desc 
+03 五月 2017 10:17:33,031  DEBUG - ? ? ==> Parameters: 100001(String)
+03 五月 2017 10:17:33,031  DEBUG - ? ? ==> Parameters: 0(String)
+03 五月 2017 10:17:33,031  DEBUG - ? ? ==>  Preparing: select nvl(a.noDo,0)||','||nvl(b.has,0) from (select count(*) noDo from TP_REPLY_DEF_SPLIT t where t.state<>10010 and t.list_type=1 and t.create_staff=?) a, (select count(*) has from TP_REPLY_DEF_SPLIT t where t.create_staff=? and t.list_type=1) b 
+03 五月 2017 10:17:33,031  DEBUG - ? ? ==> Parameters: admin(String), admin(String)
+03 五月 2017 10:17:33,039  DEBUG - ? ? ==>  Preparing: select * from ( select NOTICE_ID,NOTICE_TYPE,TITLE,to_char(a.create_dt,'yyyy-mm-dd hh24:mi:ss') create_dt,NVL(a.ISTOP,0) as ISTOP from tp_notice a where a.state =12 and (a.creater=? or exists (select column_value operator_id from table(split_str(a.operator_id,','))t where t.column_value in (?)) or a.operator_id is null) and ( exists (select column_value agent_id from table(split_str(a.agent_id,','))t where t.column_value in ( null)) or a.agent_id is null ) and a.notice_type !=2 order by ISTOP desc, create_dt desc )where rownum <= ? 
+03 五月 2017 10:17:33,040  DEBUG - ? ? ==> Parameters: 100001(String), 100001(String), 5(Integer)
+03 五月 2017 10:17:33,155  DEBUG - ? ? Added model object 'ex' of type [java.lang.String] to request in view with name 'error/error'
+03 五月 2017 10:17:33,155  DEBUG - ? ? Added model object 'ex' of type [java.lang.String] to request in view with name 'error/error'
+03 五月 2017 10:17:33,155  DEBUG - ? ? Added model object 'ex' of type [java.lang.String] to request in view with name 'error/error'
+03 五月 2017 10:17:33,155  DEBUG - ? ? Forwarding to resource [/pages/error/error.jsp] in InternalResourceView 'error/error'
+03 五月 2017 10:17:33,155  DEBUG - ? ? Forwarding to resource [/pages/error/error.jsp] in InternalResourceView 'error/error'
+03 五月 2017 10:17:33,155  DEBUG - ? ? Added model object 'ex' of type [java.lang.String] to request in view with name 'error/error'
+03 五月 2017 10:17:33,155  DEBUG - ? ? Forwarding to resource [/pages/error/error.jsp] in InternalResourceView 'error/error'
+03 五月 2017 10:17:33,155  DEBUG - ? ? Forwarding to resource [/pages/error/error.jsp] in InternalResourceView 'error/error'

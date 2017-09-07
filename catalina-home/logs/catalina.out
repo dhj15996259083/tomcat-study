@@ -1,0 +1,610 @@
+五月 04, 2017 11:14:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.77
+五月 04, 2017 11:14:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Mar 28 2017 16:01:48 UTC
+五月 04, 2017 11:14:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.77.0
+五月 04, 2017 11:14:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Mac OS X
+五月 04, 2017 11:14:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            10.12.4
+五月 04, 2017 11:14:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          x86_64
+五月 04, 2017 11:14:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre
+五月 04, 2017 11:14:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_80-b15
+五月 04, 2017 11:14:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+五月 04, 2017 11:14:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home
+五月 04, 2017 11:14:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home
+五月 04, 2017 11:14:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/conf/logging.properties
+五月 04, 2017 11:14:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+五月 04, 2017 11:14:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+五月 04, 2017 11:14:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/endorsed
+五月 04, 2017 11:14:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home
+五月 04, 2017 11:14:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home
+五月 04, 2017 11:14:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/temp
+五月 04, 2017 11:14:14 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/daihuijun/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+五月 04, 2017 11:14:14 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+五月 04, 2017 11:14:14 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+五月 04, 2017 11:14:14 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 679 ms
+五月 04, 2017 11:14:14 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+五月 04, 2017 11:14:14 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.77
+五月 04, 2017 11:14:14 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/docs
+五月 04, 2017 11:14:14 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/docs has finished in 364 ms
+五月 04, 2017 11:14:14 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/examples
+五月 04, 2017 11:14:14 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/examples has finished in 263 ms
+五月 04, 2017 11:14:14 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/host-manager
+五月 04, 2017 11:14:15 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/host-manager has finished in 45 ms
+五月 04, 2017 11:14:15 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/manager
+五月 04, 2017 11:14:15 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/manager has finished in 46 ms
+五月 04, 2017 11:14:15 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/ROOT
+五月 04, 2017 11:14:15 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/ROOT has finished in 35 ms
+五月 04, 2017 11:14:15 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+五月 04, 2017 11:14:15 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+五月 04, 2017 11:14:15 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 813 ms
+五月 04, 2017 11:14:20 上午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+五月 04, 2017 11:14:20 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-8080"]
+五月 04, 2017 11:14:20 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-bio-8009"]
+五月 04, 2017 11:14:20 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+五月 04, 2017 11:14:20 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-8080"]
+五月 04, 2017 11:14:20 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-bio-8009"]
+五月 04, 2017 11:14:20 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-8080"]
+五月 04, 2017 11:14:20 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-bio-8009"]
+五月 04, 2017 11:15:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.77
+五月 04, 2017 11:15:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Mar 28 2017 16:01:48 UTC
+五月 04, 2017 11:15:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.77.0
+五月 04, 2017 11:15:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Mac OS X
+五月 04, 2017 11:15:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            10.12.4
+五月 04, 2017 11:15:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          x86_64
+五月 04, 2017 11:15:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre
+五月 04, 2017 11:15:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_80-b15
+五月 04, 2017 11:15:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+五月 04, 2017 11:15:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home
+五月 04, 2017 11:15:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home
+五月 04, 2017 11:15:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/conf/logging.properties
+五月 04, 2017 11:15:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+五月 04, 2017 11:15:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+五月 04, 2017 11:15:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/endorsed
+五月 04, 2017 11:15:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home
+五月 04, 2017 11:15:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home
+五月 04, 2017 11:15:14 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/temp
+五月 04, 2017 11:15:14 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/daihuijun/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+五月 04, 2017 11:15:14 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+五月 04, 2017 11:15:14 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+五月 04, 2017 11:15:14 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 545 ms
+五月 04, 2017 11:15:14 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+五月 04, 2017 11:15:14 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.77
+五月 04, 2017 11:15:14 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/docs
+五月 04, 2017 11:15:14 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/docs has finished in 340 ms
+五月 04, 2017 11:15:14 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/examples
+五月 04, 2017 11:15:15 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/examples has finished in 254 ms
+五月 04, 2017 11:15:15 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/host-manager
+五月 04, 2017 11:15:15 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/host-manager has finished in 43 ms
+五月 04, 2017 11:15:15 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/manager
+五月 04, 2017 11:15:15 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/manager has finished in 46 ms
+五月 04, 2017 11:15:15 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/ROOT
+五月 04, 2017 11:15:15 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/ROOT has finished in 37 ms
+五月 04, 2017 11:15:15 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+五月 04, 2017 11:15:15 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+五月 04, 2017 11:15:15 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 765 ms
+五月 04, 2017 11:15:17 上午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+五月 04, 2017 11:15:17 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-8080"]
+五月 04, 2017 11:15:17 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-bio-8009"]
+五月 04, 2017 11:15:17 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+五月 04, 2017 11:15:17 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-8080"]
+五月 04, 2017 11:15:17 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-bio-8009"]
+五月 04, 2017 11:15:17 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-8080"]
+五月 04, 2017 11:15:17 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-bio-8009"]
+九月 01, 2017 11:00:08 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.77
+九月 01, 2017 11:00:08 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Mar 28 2017 16:01:48 UTC
+九月 01, 2017 11:00:08 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.77.0
+九月 01, 2017 11:00:08 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Mac OS X
+九月 01, 2017 11:00:08 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            10.12.6
+九月 01, 2017 11:00:08 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          x86_64
+九月 01, 2017 11:00:08 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre
+九月 01, 2017 11:00:08 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_80-b15
+九月 01, 2017 11:00:08 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+九月 01, 2017 11:00:08 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home
+九月 01, 2017 11:00:08 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home
+九月 01, 2017 11:00:08 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/conf/logging.properties
+九月 01, 2017 11:00:08 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+九月 01, 2017 11:00:08 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+九月 01, 2017 11:00:08 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/endorsed
+九月 01, 2017 11:00:08 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home
+九月 01, 2017 11:00:08 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home
+九月 01, 2017 11:00:08 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/temp
+九月 01, 2017 11:00:08 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/daihuijun/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+九月 01, 2017 11:00:08 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+九月 01, 2017 11:00:08 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+九月 01, 2017 11:00:08 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 728 ms
+九月 01, 2017 11:00:08 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+九月 01, 2017 11:00:08 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.77
+九月 01, 2017 11:00:08 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/docs
+九月 01, 2017 11:00:08 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/docs has finished in 375 ms
+九月 01, 2017 11:00:08 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/examples
+九月 01, 2017 11:00:09 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/examples has finished in 264 ms
+九月 01, 2017 11:00:09 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/host-manager
+九月 01, 2017 11:00:09 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/host-manager has finished in 45 ms
+九月 01, 2017 11:00:09 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/manager
+九月 01, 2017 11:00:09 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/manager has finished in 61 ms
+九月 01, 2017 11:00:09 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/ROOT
+九月 01, 2017 11:00:09 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/ROOT has finished in 36 ms
+九月 01, 2017 11:00:09 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/testWeb
+九月 01, 2017 11:00:09 上午 org.apache.catalina.core.StandardContext startInternal
+严重: One or more listeners failed to start. Full details will be found in the appropriate container log file
+九月 01, 2017 11:00:09 上午 org.apache.catalina.core.StandardContext startInternal
+严重: Context [/testWeb] startup failed due to previous errors
+九月 01, 2017 11:00:09 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/testWeb has finished in 66 ms
+九月 01, 2017 11:00:09 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+九月 01, 2017 11:00:09 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+九月 01, 2017 11:00:09 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 909 ms
+九月 01, 2017 11:03:40 上午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+九月 01, 2017 11:03:40 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-8080"]
+九月 01, 2017 11:03:40 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-bio-8009"]
+九月 01, 2017 11:03:40 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+九月 01, 2017 11:03:40 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-8080"]
+九月 01, 2017 11:03:40 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-bio-8009"]
+九月 01, 2017 11:03:40 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-8080"]
+九月 01, 2017 11:03:40 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-bio-8009"]
+九月 01, 2017 11:22:59 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.77
+九月 01, 2017 11:22:59 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Mar 28 2017 16:01:48 UTC
+九月 01, 2017 11:22:59 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.77.0
+九月 01, 2017 11:22:59 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Mac OS X
+九月 01, 2017 11:22:59 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            10.12.6
+九月 01, 2017 11:22:59 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          x86_64
+九月 01, 2017 11:22:59 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre
+九月 01, 2017 11:22:59 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_80-b15
+九月 01, 2017 11:22:59 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+九月 01, 2017 11:22:59 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home
+九月 01, 2017 11:22:59 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home
+九月 01, 2017 11:22:59 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/conf/logging.properties
+九月 01, 2017 11:22:59 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+九月 01, 2017 11:22:59 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+九月 01, 2017 11:22:59 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/endorsed
+九月 01, 2017 11:22:59 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home
+九月 01, 2017 11:22:59 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home
+九月 01, 2017 11:22:59 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/temp
+九月 01, 2017 11:22:59 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/daihuijun/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+九月 01, 2017 11:22:59 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+九月 01, 2017 11:22:59 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+九月 01, 2017 11:22:59 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 534 ms
+九月 01, 2017 11:22:59 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+九月 01, 2017 11:22:59 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.77
+九月 01, 2017 11:22:59 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/docs
+九月 01, 2017 11:23:00 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/docs has finished in 351 ms
+九月 01, 2017 11:23:00 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/examples
+九月 01, 2017 11:23:00 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/examples has finished in 262 ms
+九月 01, 2017 11:23:00 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/host-manager
+九月 01, 2017 11:23:00 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/host-manager has finished in 44 ms
+九月 01, 2017 11:23:00 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/manager
+九月 01, 2017 11:23:00 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/manager has finished in 56 ms
+九月 01, 2017 11:23:00 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/ROOT
+九月 01, 2017 11:23:00 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/ROOT has finished in 41 ms
+九月 01, 2017 11:23:00 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/webapp-3.0
+九月 01, 2017 11:23:00 上午 org.apache.catalina.core.StandardContext startInternal
+严重: One or more listeners failed to start. Full details will be found in the appropriate container log file
+九月 01, 2017 11:23:00 上午 org.apache.catalina.core.StandardContext startInternal
+严重: Context [/webapp-3.0] startup failed due to previous errors
+九月 01, 2017 11:23:00 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/webapp-3.0 has finished in 70 ms
+九月 01, 2017 11:23:00 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+九月 01, 2017 11:23:00 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+九月 01, 2017 11:23:00 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 876 ms
+九月 01, 2017 11:25:05 上午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+九月 01, 2017 11:25:05 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-8080"]
+九月 01, 2017 11:25:05 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-bio-8009"]
+九月 01, 2017 11:25:05 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+九月 01, 2017 11:25:05 上午 org.apache.catalina.session.StandardManager doUnload
+严重: IOException while saving persisted sessions: java.io.FileNotFoundException: /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/work/Catalina/localhost/manager/SESSIONS.ser (No such file or directory)
+java.io.FileNotFoundException: /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/work/Catalina/localhost/manager/SESSIONS.ser (No such file or directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:110)
+	at org.apache.catalina.session.StandardManager.doUnload(StandardManager.java:358)
+	at org.apache.catalina.session.StandardManager.unload(StandardManager.java:323)
+	at org.apache.catalina.session.StandardManager.stopInternal(StandardManager.java:493)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5825)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1587)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1576)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+九月 01, 2017 11:25:05 上午 org.apache.catalina.session.StandardManager stopInternal
+严重: Exception unloading sessions to persistent storage
+java.io.FileNotFoundException: /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/work/Catalina/localhost/manager/SESSIONS.ser (No such file or directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:110)
+	at org.apache.catalina.session.StandardManager.doUnload(StandardManager.java:358)
+	at org.apache.catalina.session.StandardManager.unload(StandardManager.java:323)
+	at org.apache.catalina.session.StandardManager.stopInternal(StandardManager.java:493)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5825)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1587)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1576)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+九月 01, 2017 11:25:05 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-8080"]
+九月 01, 2017 11:25:05 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-bio-8009"]
+九月 01, 2017 11:25:05 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-8080"]
+九月 01, 2017 11:25:05 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-bio-8009"]
+九月 01, 2017 11:25:18 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.77
+九月 01, 2017 11:25:18 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Mar 28 2017 16:01:48 UTC
+九月 01, 2017 11:25:18 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.77.0
+九月 01, 2017 11:25:18 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Mac OS X
+九月 01, 2017 11:25:18 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            10.12.6
+九月 01, 2017 11:25:18 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          x86_64
+九月 01, 2017 11:25:18 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre
+九月 01, 2017 11:25:18 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_80-b15
+九月 01, 2017 11:25:18 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+九月 01, 2017 11:25:18 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home
+九月 01, 2017 11:25:18 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home
+九月 01, 2017 11:25:18 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/conf/logging.properties
+九月 01, 2017 11:25:18 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+九月 01, 2017 11:25:18 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+九月 01, 2017 11:25:18 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/endorsed
+九月 01, 2017 11:25:18 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home
+九月 01, 2017 11:25:18 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home
+九月 01, 2017 11:25:18 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/temp
+九月 01, 2017 11:25:18 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/daihuijun/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+九月 01, 2017 11:25:18 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+九月 01, 2017 11:25:18 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+九月 01, 2017 11:25:18 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 549 ms
+九月 01, 2017 11:25:18 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+九月 01, 2017 11:25:18 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.77
+九月 01, 2017 11:25:18 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/docs
+九月 01, 2017 11:25:19 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/docs has finished in 347 ms
+九月 01, 2017 11:25:19 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/examples
+九月 01, 2017 11:25:19 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/examples has finished in 271 ms
+九月 01, 2017 11:25:19 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/host-manager
+九月 01, 2017 11:25:19 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/host-manager has finished in 45 ms
+九月 01, 2017 11:25:19 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/manager
+九月 01, 2017 11:25:19 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/manager has finished in 47 ms
+九月 01, 2017 11:25:19 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/ROOT
+九月 01, 2017 11:25:19 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/ROOT has finished in 37 ms
+九月 01, 2017 11:25:19 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/webapp-3.0
+九月 01, 2017 11:25:19 上午 org.apache.catalina.core.StandardContext startInternal
+严重: One or more listeners failed to start. Full details will be found in the appropriate container log file
+九月 01, 2017 11:25:19 上午 org.apache.catalina.core.StandardContext startInternal
+严重: Context [/webapp-3.0] startup failed due to previous errors
+九月 01, 2017 11:25:19 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/webapp-3.0 has finished in 66 ms
+九月 01, 2017 11:25:19 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+九月 01, 2017 11:25:19 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+九月 01, 2017 11:25:19 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 865 ms
+九月 01, 2017 11:26:54 上午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+九月 01, 2017 11:26:54 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-8080"]
+九月 01, 2017 11:26:54 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-bio-8009"]
+九月 01, 2017 11:26:55 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+九月 01, 2017 11:26:55 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-8080"]
+九月 01, 2017 11:26:55 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-bio-8009"]
+九月 01, 2017 11:26:55 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-8080"]
+九月 01, 2017 11:26:55 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-bio-8009"]
+九月 01, 2017 11:26:57 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.77
+九月 01, 2017 11:26:57 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Mar 28 2017 16:01:48 UTC
+九月 01, 2017 11:26:57 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.77.0
+九月 01, 2017 11:26:57 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Mac OS X
+九月 01, 2017 11:26:57 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            10.12.6
+九月 01, 2017 11:26:57 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          x86_64
+九月 01, 2017 11:26:57 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre
+九月 01, 2017 11:26:57 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_80-b15
+九月 01, 2017 11:26:57 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+九月 01, 2017 11:26:57 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home
+九月 01, 2017 11:26:57 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home
+九月 01, 2017 11:26:57 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/conf/logging.properties
+九月 01, 2017 11:26:57 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+九月 01, 2017 11:26:57 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+九月 01, 2017 11:26:57 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/endorsed
+九月 01, 2017 11:26:57 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home
+九月 01, 2017 11:26:57 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home
+九月 01, 2017 11:26:57 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/temp
+九月 01, 2017 11:26:57 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/daihuijun/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+九月 01, 2017 11:26:57 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+九月 01, 2017 11:26:57 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+九月 01, 2017 11:26:57 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 538 ms
+九月 01, 2017 11:26:57 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+九月 01, 2017 11:26:57 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.77
+九月 01, 2017 11:26:57 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/docs
+九月 01, 2017 11:26:57 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/docs has finished in 360 ms
+九月 01, 2017 11:26:57 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/examples
+九月 01, 2017 11:26:58 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/examples has finished in 261 ms
+九月 01, 2017 11:26:58 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/host-manager
+九月 01, 2017 11:26:58 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/host-manager has finished in 48 ms
+九月 01, 2017 11:26:58 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/manager
+九月 01, 2017 11:26:58 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/manager has finished in 47 ms
+九月 01, 2017 11:26:58 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/ROOT
+九月 01, 2017 11:26:58 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/ROOT has finished in 36 ms
+九月 01, 2017 11:26:58 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/webapp-3.0
+九月 01, 2017 11:26:58 上午 org.apache.catalina.core.StandardContext startInternal
+严重: One or more listeners failed to start. Full details will be found in the appropriate container log file
+九月 01, 2017 11:26:58 上午 org.apache.catalina.core.StandardContext startInternal
+严重: Context [/webapp-3.0] startup failed due to previous errors
+九月 01, 2017 11:26:58 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/daihuijun/IdeaProjects/Tomcat7.0/catalina-home/webapps/webapp-3.0 has finished in 59 ms
+九月 01, 2017 11:26:58 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+九月 01, 2017 11:26:58 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+九月 01, 2017 11:26:58 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 862 ms
+九月 01, 2017 11:28:17 上午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+九月 01, 2017 11:28:17 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-8080"]
+九月 01, 2017 11:28:18 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-bio-8009"]
+九月 01, 2017 11:28:18 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+九月 01, 2017 11:28:18 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-8080"]
+九月 01, 2017 11:28:18 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-bio-8009"]
+九月 01, 2017 11:28:18 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-8080"]
+九月 01, 2017 11:28:18 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-bio-8009"]
